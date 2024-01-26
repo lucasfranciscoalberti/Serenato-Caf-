@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+
+
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input[type=checkbox] {
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+.banner-1{
+  background-image: url(/assets/banner-1.jpg);
+}
+
+.banner-2{
+  background-image: url(/assets/banner-2.jpg);
+}
+
+.banner-3{
+  background-image: url(/assets/banner-3.jpg);
+}
+
+.banners{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.banner-titulo{
+  --bs-bg-opacity:.6;
+}
+
+.banner-titulo3{
+  --bs-bg-opacity:.8;
+}
+
+.botao-padrao{
+  background-color: #816D4F;
+  color: #E6E0D6;
+}
+
+.botao-padrao:hover{
+  background-color: var(--marrom-claro);
+  color: aliceblue;
+}
+
+.form-range::-webkit-slider-thumb, footer {
+  background-color: var(--marrom-claro);
+}
+
+
+@media only screen and (max-width: 1113px) {
+  .banner-1{
+    background-image: url(/assets/banner-1-mobile.jpg);
+  }
+
+}
